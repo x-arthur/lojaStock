@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const C_Simulador = styled.section`
   max-width: 568px;
   margin: 0 auto;
+  padding: 0 16px;
   h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -21,10 +22,11 @@ export const C_Simulador = styled.section`
 
       input[type="number"] {
         min-height: 32px;
-        width: 100%;
+        width: calc(100% - 32px);
         border-radius: 4px;
         border: 1px solid transparent;
-        // margin: 0 auto;
+        margin: 0 auto;
+        display: block;
       }
     }
     .grupo {
